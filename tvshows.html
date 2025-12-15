@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix - Browse</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #141414; color: white; font-family: Arial, sans-serif; }
+        .navbar { display: flex; align-items: center; padding: 20px 40px; background-color: #141414; position: fixed; top: 0; width: 100%; z-index: 1000; }
+        .logo { color: #E50914; font-size: 28px; font-weight: bold; margin-right: 40px; text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #e5e5e5; text-decoration: none; font-size: 14px; }
+        .nav-links a:hover { color: #b3b3b3; }
+        .active { color: white; font-weight: bold; } 
+
+        .content-padding { padding-top: 100px; padding-left: 40px; }
+        .row { margin-bottom: 40px; }
+        .posters { display: flex; overflow-x: scroll; padding: 10px 0; scrollbar-width: none; }
+        .posters::-webkit-scrollbar { display: none; }
+        .poster { max-height: 150px; margin-right: 10px; border-radius: 4px; transition: transform 0.3s; }
+        .poster:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="logo">NETFLIX</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tvshows.html">TV Shows</a>
+            <a href="movies.html" class="active">Movies</a> <a href="latest.html">New & Popular</a>
+            <a href="mylist.html">My List</a>
+        </div>
+    </div>
+
+    <div class="content-padding">
+        <h1>Movies</h1>
+        
+        <div class="row">
+            <h2>Action Thrillers</h2>
+            <div class="posters">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/pFlaoOXp51chcnrI0aumzG6SgM7.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/ryPxBVcfAfqFy79NFwEW1w44Uuw.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/7IIPI44tREewXhJ952iT5k6h9c.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/lFSSLTlFozwpaGlOS31QqH6V2T6.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Comedies</h2>
+            <div class="posters">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/6KErczPBROQty7QoIsaa6wJYXZi.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/u3bZgnGQ9T6JuDV9jyvGIaMAmE9.jpg">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/8xV47NDrjdZDpkVcCFqkdHa3T0C.jpg">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
