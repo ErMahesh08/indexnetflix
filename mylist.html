@@ -2,52 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Netflix - My List</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #141414; color: white; font-family: Arial, sans-serif; }
-        
-        /* Navbar */
-        .navbar { display: flex; align-items: center; padding: 20px 40px; background-color: #141414; position: fixed; top: 0; width: 100%; z-index: 1000; }
-        .logo { color: #E50914; font-size: 28px; font-weight: bold; margin-right: 40px; text-decoration: none; }
-        .nav-links { display: flex; gap: 20px; }
-        .nav-links a { color: #e5e5e5; text-decoration: none; font-size: 14px; }
-        .nav-links a:hover { color: #b3b3b3; }
-        .active { color: white; font-weight: bold; } 
-
-        /* Grid Layout for My List */
-        .container { padding: 100px 40px 40px 40px; }
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-            gap: 20px; 
-            margin-top: 20px;
-        }
-        .grid-item img {
-            width: 100%;
-            border-radius: 4px;
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
-        .grid-item img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <title>My List - Netflix</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="navbar">
-        <a href="index.html" class="logo">NETFLIX</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="tvshows.html">TV Shows</a>
-            <a href="movies.html">Movies</a>
-            <a href="latest.html">New & Popular</a>
-            <a href="mylist.html" class="active">My List</a>
+        <div class="nav-left">
+            <a href="index.html" class="logo">NETFLIX</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tvshows.html">TV Shows</a>
+                <a href="movies.html">Movies</a>
+                <a href="latest.html">New & Popular</a>
+                <a href="mylist.html" class="active">My List</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <button class="search-btn">🔍</button>
+                <input type="text" class="search-txt" placeholder="Titles, people, genres">
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" width="30" style="border-radius:4px;">
         </div>
     </div>
 
-    <div class="container">
+    <div class="grid-container">
         <h1>My List</h1>
         <div class="grid">
             <div class="grid-item"><img src="https://image.tmdb.org/t/p/w500/pFlaoOXp51chcnrI0aumzG6SgM7.jpg"></div>
@@ -58,6 +37,5 @@
             <div class="grid-item"><img src="https://image.tmdb.org/t/p/w500/2ks5tQ6gR9WN1tJc16i2gV4KbdH.jpg"></div>
         </div>
     </div>
-
 </body>
 </html>
